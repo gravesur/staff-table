@@ -1,0 +1,104 @@
+.staff-table {
+  width: 100%;
+  margin-bottom: 2rem;
+  border-collapse: collapse;
+
+  tr {
+    border-bottom: 1px solid #dee2e6;
+    margin: 2rem 0;
+    padding: 1rem 1rem;
+    height: 5rem;
+  }
+
+  th {
+    border-bottom: 1px solid #dee2e6;
+    padding: 1rem 0;
+    text-align: start;
+  }
+
+  th:last-child {
+    padding-right: .5rem;
+    text-align: right;
+  }
+
+  td {
+    vertical-align: middle;
+  }
+
+  &__buttons {
+    display: flex;
+    
+    float: right;
+    margin-right: .5rem;
+  }
+
+  & .icon {
+		width: 1.5rem;
+    height: 1.5rem;
+
+    &-person {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+    
+    &-pencil {
+      fill: gold;
+    }
+
+    &-x {
+      fill: red;
+    }
+	}
+}
+
+.button {
+  &-add {
+    margin-left: .5rem;
+    width: 19rem;
+    color: dodgerblue;
+    border-color: dodgerblue;
+    margin-bottom: 3rem;
+
+    &:hover {
+      background-color: dodgerblue;
+      color: white;
+    }
+  }
+
+  &-update {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 3.7rem;
+    border-color: gold;
+    margin-right: 0.5rem;
+
+    &:hover {
+      background-color: gold;
+      color: white;
+
+      .icon {
+        fill: white;
+      }
+    }
+  }
+
+  &-delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 3.7rem;
+    border-color: red;
+
+    &:hover {
+      background-color: red;
+      color: white;
+
+      .icon {
+        fill: white;
+      }
+    }
+  }
+}
